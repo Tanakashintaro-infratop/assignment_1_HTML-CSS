@@ -1,0 +1,96 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #ff9a4b;
+}
+
+main {
+  margin: 50px auto;
+  width: 960px;
+  display: flex;
+}
+
+.item-box {
+  width: 300px;
+  background-color: #eeeeee;
+  position: relative;
+  margin-right: 30px;
+}
+
+.item-img1,
+.item-img2,
+.item-img3 {
+  margin: 10px;
+  height: 150px;
+  width: 280px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.item-img1 {
+  background-image: url(img/flow01.png);
+}
+.item-img2 {
+  background-image: url(img/flow02.png);
+}
+.item-img3 {
+  background-image: url(img/flow03.png);
+}
+
+.step {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #ff9a4b;
+}
+
+.step-num {
+  color: #ffffff;
+  text-align: center;
+}
+
+.item-title {
+  width: 280px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.item-string {
+  margin: 10px 10px;
+  margin-top: 5px;
+  /* font-size: 13px; */
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin: 50px auto;
+    width: 100%;
+    display: block;
+  }
+
+  .item-box {
+    width: 90%;
+    margin: 20px auto;
+    padding: 0.1% 0.1%;
+  }
+
+  .item-img1,
+  .item-img2,
+  .item-img3 {
+    width: auto;
+  }
+}
